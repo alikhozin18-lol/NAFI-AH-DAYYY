@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Birthday Case File ⚖️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div id="app">
+
+    <!-- BACKGROUND EFFECT -->
+
+    <div id="stars"></div>
+
+    <div id="hearts"></div>
+
+    <div id="sparkles"></div>
+
+
+    <!-- =========================================
+         INTRO
+    ========================================== -->
+
+    <section id="intro">
+
+        <div class="intro-glow"></div>
+
+        <div class="intro-card">
+
+            <div class="paperclip"></div>
+
+            <div class="case-stamp">
+                CONFIDENTIAL
+            </div>
+
+            <div class="intro-symbol">
+                ⚖️
+            </div>
+
+            <div class="intro-small">
+                BIRTHDAY CASE FILE
+            </div>
+
+            <h1>
+                THE BIRTHDAY<br>
+                CASE
+            </h1>
+
+            <div class="case-line"></div>
+
+            <div class="case-info">
+
+                <p>
+                    <span>CASE NO.</span>
+                    <strong id="introCase">
+                        12 / SEPTEMBER / 2026
+                    </strong>
+                </p>
+
+                <p>
+                    <span>TERDAKWA</span>
+                    <strong id="introName">
+                        HIDAYATUN NAFI'AH S.H.
+                    </strong>
+                </p>
+
+                <p>
+                    <span>PERKARA</span>
+                    <strong>
+                        ULANG TAHUN DAN GELAR BARU
+                    </strong>
+                </p>
+
+            </div>
+
+            <p class="intro-text">
+                Sebuah perkara khusus telah dibuka
+                bertepatan dengan hari ulang tahun
+                terdakwa.
+            </p>
+
+            <p class="intro-warning">
+                ⚠️ BERKAS INI BERSIFAT SANGAT RAHASIA ⚠️
+            </p>
+
+            <button id="startBtn">
+                BUKA BERKAS 💗
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MAIN EXPERIENCE
+    ========================================== -->
+
+    <main id="main">
+
+        <header class="topbar">
+
+            <div class="brand">
+                CASE FILE <span>⚖️</span>
+            </div>
+
+            <div
+                class="counter"
+                id="counter"
+            >
+                01 / 06
+            </div>
+
+        </header>
+
+
+        <!-- MUSIC -->
+
+        <button
+            class="music-button"
+            id="musicBtn"
+        >
+            ♫
+        </button>
+
+
+        <!-- PHOTO MOMENTS -->
+
+        <section id="levels"></section>
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-wrapper">
+
+            <div class="progress-label">
+
+                <span>
+                    EVIDENCE PROGRESS
+                </span>
+
+                <span id="progressText">
+                    01 / 06
+                </span>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    id="progressBar"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navigation">
+
+            <button
+                class="nav-button"
+                id="prevBtn"
+            >
+                ← KEMBALI
+            </button>
+
+            <button
+                class="nav-button primary"
+                id="nextBtn"
+            >
+                LANJUT →
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         QUIZ INTRO
+    ========================================== -->
+
+    <section id="quizIntro">
+
+        <div class="quiz-card">
+
+            <div class="quiz-icon">
+                ⚖️
+            </div>
+
+            <div class="section-label">
+                FINAL EXAMINATION
+            </div>
+
+            <h2>
+                SIDANG<br>
+                UJIAN HUKUM
+            </h2>
+
+            <p>
+                Sebelum putusan akhir diberikan,
+                terdakwa wajib melewati
+                <strong>8 pertanyaan.</strong>
+            </p>
+
+            <div class="rules">
+
+                <div>
+                    <span>01</span>
+                    Jawab setiap pertanyaan.
+                </div>
+
+                <div>
+                    <span>02</span>
+                    Jangan terlalu percaya diri.
+                </div>
+
+                <div>
+                    <span>03</span>
+                    Beberapa soal sengaja menjebak. 👀
+                </div>
+
+            </div>
+
+            <button
+                class="start-quiz"
+                id="startQuizBtn"
+            >
+                MULAI SIDANG ⚖️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         QUIZ
+    ========================================== -->
+
+    <section id="quizScreen">
+
+        <div class="quiz-header">
+
+            <div class="quiz-case">
+                CASE NO. / BDAY-2026
+            </div>
+
+            <div
+                class="quiz-number"
+                id="quizNumber"
+            >
+                QUESTION 01 / 08
+            </div>
+
+        </div>
+
+
+        <div class="quiz-progress">
+
+            <div
+                id="quizProgressBar"
+            ></div>
+
+        </div>
+
+
+        <div class="question-card">
+
+            <div class="question-category">
+                <span id="questionCategory">
+                    HUKUM
+                </span>
+            </div>
+
+            <h2 id="questionText">
+                Pertanyaan
+            </h2>
+
+            <div
+                class="answers"
+                id="answers"
+            ></div>
+
+            <div
+                class="quiz-feedback"
+                id="quizFeedback"
+            ></div>
+
+        </div>
+
+
+        <button
+            class="objection"
+            id="objectionBtn"
+        >
+            OBJECTION! ⚖️
+        </button>
+
+    </section>
+
+
+    <!-- =========================================
+         VERDICT
+    ========================================== -->
+
+    <section id="verdictScreen">
+
+        <div class="verdict-glow"></div>
+
+        <div class="verdict-card">
+
+            <div class="gavel">
+                🔨
+            </div>
+
+            <div class="section-label">
+                THE COURT IS NOW IN SESSION
+            </div>
+
+            <h1>
+                PUTUSAN<br>
+                AKHIR
+            </h1>
+
+            <div class="verdict-line"></div>
+
+            <p class="verdict-result">
+                TERDAKWA DINYATAKAN...
+            </p>
+
+            <h2 id="verdictText">
+                BERSALAH.
+            </h2>
+
+            <p id="verdictReason">
+                Atas dakwaan terlalu hebat
+                di hari ulang tahunnya.
+            </p>
+
+            <button
+                id="openFinalBtn"
+                class="verdict-button"
+            >
+                LIHAT PUTUSAN LENGKAP 💗
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FINAL
+    ========================================== -->
+
+    <section id="finalScreen">
+
+        <div class="final-photo"></div>
+
+        <div class="final-overlay"></div>
+
+        <div class="final-confetti"></div>
+
+        <div class="final-content">
+
+            <div class="final-small">
+                CASE CLOSED • ⚖️
+            </div>
+
+            <div class="final-symbol">
+                ♡
+            </div>
+
+            <h1>
+                HAPPY<br>
+                BIRTHDAY
+            </h1>
+
+            <div
+                class="final-name"
+                id="finalName"
+            >
+                [nafi'ah]
+            </div>
+
+            <p class="final-message">
+
+                Selamat ulang tahun! 💗
+
+                <br><br>
+
+                Dan selamat juga atas
+                perjalanan panjang sampai
+                akhirnya resmi menyandang
+                gelar <strong>S.H.</strong>
+
+                <br><br>
+
+                Semoga setelah lulus hukum,
+                hidupmu tidak selalu penuh
+                dengan perkara. 😭
+
+                <br>
+
+                Kalau pun ada masalah,
+                semoga selalu ada jalan
+                keluarnya.
+
+            </p>
+
+            <div class="final-verdict">
+                <span>PUTUSAN FINAL</span>
+
+                <strong>
+                    HIDUP HARUS BAHAGIA. 💗
+                </strong>
+            </div>
+
+            <button
+                id="replayBtn"
+                class="replay"
+            >
+                ULANGI PERKARA ↻
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         AUDIO
+    ========================================== -->
+
+    <audio
+        id="musicMain"
+        loop
+        preload="auto"
+    >
+        <source
+            src="assets/audio/musik-utama.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <audio
+        id="musicFinal"
+        loop
+        preload="auto"
+    >
+        <source
+            src="assets/audio/musik-final.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <audio
+        id="soundOpening"
+        preload="auto"
+    >
+        <source
+            src="assets/audio/opening.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <audio
+        id="soundCorrect"
+        preload="auto"
+    >
+        <source
+            src="assets/audio/correct.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <audio
+        id="soundWrong"
+        preload="auto"
+    >
+        <source
+            src="assets/audio/wrong.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <audio
+        id="soundTransition"
+        preload="auto"
+    >
+        <source
+            src="assets/audio/transition.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <audio
+        id="soundGavel"
+        preload="auto"
+    >
+        <source
+            src="assets/audio/gavel.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <audio
+        id="soundFinalVoice"
+        preload="auto"
+    >
+        <source
+            src="assets/audio/voice-final.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
