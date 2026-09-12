@@ -18,7 +18,7 @@ const CONFIG = {
 
     name: "HIDAYATUN NAFI'AH",
 
-    caseNumber: "25 / SEPTEMBER / 2026",
+    caseNumber: "12 / SEPTEMBER / 2026",
 
 
     /* -------------------------
